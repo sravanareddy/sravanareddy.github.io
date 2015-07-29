@@ -1,0 +1,18 @@
+body {
+    padding-top: 20px;
+    background-color: #B4CDCD;
+}
+
+.main {
+  padding: 30px 15px;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+.navbar-inverse{
+    background-color: #003333;
+}
+
+.abstract {
+    padding: 10px 10px 10px 10px;
+}
