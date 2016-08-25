@@ -16,3 +16,34 @@ body {
 .abstract {
     padding: 10px 10px 10px 10px;
 }
+
+.minibox {
+  padding: 10px 20px;
+  float: left;
+}
+
+#error {
+  font-family: monospace;
+}
+
+#leftmain {
+  padding: 30px 15px;
+  width: 50%;
+  float: left;
+  background-color: #ffffff;
+  font-size: 12pt;
+  font-family: "Helvetica Neue", "Bookman Antiqua", Garamond, serif;;
+}
+
+#rightmain {
+  padding: 60px 15px;
+  float: right;
+  width: 49%;
+  background-color: #ffffff;
+  font-size: 11pt;
+}
+
+.footer {
+  clear: both;
+  background-color: #ffffff;
+}

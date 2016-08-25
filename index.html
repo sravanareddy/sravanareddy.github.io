@@ -53,16 +53,23 @@
 	Chicago, and spent some time at Dartmouth College as a Neukom Fellow.</p>
 
       <div class="tab-content">
-	
+
       <div role="tabpanel" class="tab-pane active" id="research">
-	
+
 	<h2 id="research">Research</h2>
-	
+
 	<p>My interests include
-	unsupervised machine learning,
-	pronunciation modeling, and applications of NLP to linguistics and the humanities.</p>
-	
-	<h3>Publications</h3>
+	unsupervised learning,
+	pronunciation modeling, and applications of NLP to linguistics, humanities, and the social sciences.</p>
+
+  <ol class="breadcrumb">
+  <li><a href="#pubs">Publications</a></li>
+  <li><a href="#pres">Presentations</a></li>
+  <li><a href="#data">Tools and Data</a></li>
+<li><a href="#theses">Theses</a></li>
+  </ol>
+
+	<h3 id="pubs">Publications</h3>
 
 	<!--     PAPER --->
 
@@ -75,13 +82,13 @@
 	href="papers/vanguard.pdf">preprint</a>
 	<a class="btn btn-xs btn-primary"
 	href="http://www.degruyter.com/view/j/lingvan.ahead-of-print/lingvan-2015-0002/lingvan-2015-0002.xml">paper</a>
-	
+
 	<a class="btn btn-xs btn-primary" data-toggle="collapse"
 	data-target="#absvanguard" aria-expanded="false" role="button">abstract</a>
 	</p>
-	
+
       <div id="absvanguard" class="bg-info collapse abstract">
-	
+
 Automatic Speech Recognition (ASR) is reaching further and further
   into everyday life with Apple's Siri, Google voice search, automated
   telephone information systems, dictation devices, closed captioning,
@@ -121,14 +128,14 @@ Automatic Speech Recognition (ASR) is reaching further and further
       role="button">abstract</a>
 	<a class="btn btn-xs btn-primary"
       href="slides/darla_naacl_poster.pdf">poster</a>
-      
-      		<a class="btn btn-xs btn-success"
+
+      		<a class="btn btn-xs btn-danger"
 	href="http://darla.dartmouth.edu">website</a>
 
       </p>
 
           <div id="absdarlanaacl" class="bg-info collapse abstract">
-	
+
 Sociolinguists are regularly faced with the task of measuring phonetic
 	    features from speech, which involves manually transcribing
 	    audio recordings -- a major bottleneck to analyzing large
@@ -139,8 +146,8 @@ Sociolinguists are regularly faced with the task of measuring phonetic
 	    data. We demonstrate this tool by using it to
 	    automatically analyze President Barack Obama’s vowel
 	    pronunciations.	  </div>
-	    
-	  
+
+
 <!--     PAPER --->
     	<p><strong>Decoding Running Key Ciphers.</strong>
 	Sravana Reddy and <a
@@ -154,13 +161,13 @@ Sociolinguists are regularly faced with the task of measuring phonetic
       </p>
 
           <div id="absrunkey" class="bg-info collapse abstract">
-There has been recent interest in the problem of decoding letter substitution ciphers using techniques inspired by natural language processing. We consider a different type of classical encoding scheme known as the running key cipher, and propose a search solution using Gibbs sampling with a word language model. We evaluate our method on synthetic ciphertexts of different lengths, and find that it outperforms previous work that employs Viterbi 
-decoding with character-based models. 
+There has been recent interest in the problem of decoding letter substitution ciphers using techniques inspired by natural language processing. We consider a different type of classical encoding scheme known as the running key cipher, and propose a search solution using Gibbs sampling with a word language model. We evaluate our method on synthetic ciphertexts of different lengths, and find that it outperforms previous work that employs Viterbi
+decoding with character-based models.
 	  </div>
 
 <!-- PAPER -->
 	  <p><strong>G2P Conversion of Proper Names Using Word Origin
-	  Information.</strong> <a href="http://people.cs.uchicago.edu/~wax">Sonjia Waxmonsky</a> 
+	  Information.</strong> <a href="http://people.cs.uchicago.edu/~wax">Sonjia Waxmonsky</a>
 	  and Sravana Reddy. In <em>Proceedings of NAACL 2012</em>.
 	  </p>
 	<p>
@@ -178,9 +185,9 @@ decoding with character-based models.
 Motivated by the fact that the pronunciation of a name may be
 influenced by its language of origin,  we present methods to improve
 pronunciation prediction of proper names using
-word origin information. 
+word origin information.
 We train grapheme-to-phoneme (G2P) models on language-specific data
-sets and interpolate the outputs. 
+sets and interpolate the outputs.
 We perform experiments on US personal surnames, a data set where word origin variation
 occurs naturally. Our methods can be used with any G2P algorithm that outputs
 posterior probabilities of phoneme sequences for a given word.
@@ -203,7 +210,7 @@ posterior probabilities of phoneme sequences for a given word.
 
           <div id="abslfm" class="bg-info collapse abstract">
 We introduce the problem of learning pronunciations of out-of-vocabulary words from word recognition mistakes made by an automatic speech recognition (ASR) system. This question is especially relevant in cases where the  ASR engine is a black box -- meaning that the only acoustic cues about the speech data come from the word recognition outputs. This paper presents an expectation maximization approach to inferring pronunciations from ASR word recognition hypotheses, which outperforms pronunciation estimates of a state of the art grapheme-to-phoneme system.	  </div>
-	  
+
       	  <!-- PAPER -->
 	  <p><strong>Unsupervised Discovery of Rhyme Schemes.</strong> Sravana
 	  Reddy and <a href="http://www.isi.edu/~knight">Kevin Knight</a>. In <em>Proceedings of ACL 2011</em>.
@@ -217,7 +224,7 @@ We introduce the problem of learning pronunciations of out-of-vocabulary words f
 href="slides/rhymes_acl_slides.pdf">slides</a>
 	<a class="btn btn-xs btn-danger"
 href="https://github.com/sravanareddy/rhymedata">data</a>
-	<a class="btn btn-xs btn-success"
+	<a class="btn btn-xs btn-danger"
 href="https://github.com/sravanareddy/rhymediscovery">code</a>
 
 
@@ -253,7 +260,7 @@ href="http://www.wired.com/2012/12/codes">press</a>
 
       	  <!-- PAPER -->
 	  <p><strong>An MDL-based Approach to Extracting Subword Units for Grapheme-to-Phoneme Conversion.</strong> Sravana
-	  Reddy and <a href="http://people.cs.uchicago.edu/~jagoldsm/">John 
+	  Reddy and <a href="http://people.cs.uchicago.edu/~jagoldsm/">John
 	  Goldsmith</a>. In <em>Proceedings of NAACL 2010</em>.
 	  </p>
 	<p>
@@ -269,7 +276,7 @@ We address a key problem in grapheme-to-phoneme conversion: the ambiguity in map
 
       	  <!-- PAPER -->
 	  <p><strong>Substring-based Transliteration with Conditional Random Fields.</strong> Sravana
-	  Reddy and <a href="http://people.cs.uchicago.edu/~wax">Sonjia 
+	  Reddy and <a href="http://people.cs.uchicago.edu/~wax">Sonjia
 	  Waxmonsky</a>. In <em>Proceedings of the ACL 2010 Names
 	  Entities Workshop</em>.
 	  </p>
@@ -282,7 +289,7 @@ We address a key problem in grapheme-to-phoneme conversion: the ambiguity in map
       </p>
 
   <div id="abscrf" class="bg-info collapse abstract">
-Motivated by phrase-based translation research, we present a transliteration system where characters are grouped into substrings to be mapped atomically into the target language. We show how this substring representation can be incorporated into a Conditional Random Field model that uses local context and phonemic information. Our training and test data consists of three sets: English to Hindi, English to Kannada, and English to Tamil (Kumaran and Kellner, 2007) from the NEWS 2009 Machine Transliteration Shared Task (Li et al., 2009). 
+Motivated by phrase-based translation research, we present a transliteration system where characters are grouped into substrings to be mapped atomically into the target language. We show how this substring representation can be incorporated into a Conditional Random Field model that uses local context and phonemic information. Our training and test data consists of three sets: English to Hindi, English to Kannada, and English to Tamil (Kumaran and Kellner, 2007) from the NEWS 2009 Machine Transliteration Shared Task (Li et al., 2009).
   </div>
 
       	  <!-- PAPER -->
@@ -303,7 +310,7 @@ An eggcorn is a type of linguistic error where a word is substituted with one th
 
  <!-- PAPER -->
 
-  <h3>Presentations</h3>
+  <h3 id="pres">Presentations</h3>
 
    <p><strong>Automatic speech recognition in sociophonetics.</strong>
   Sravana Reddy, <a href="http://www.dartmouth.edu/~jstanford">James
@@ -313,7 +320,7 @@ An eggcorn is a type of linguistic error where a word is substituted with one th
   </p>
   <p><a class="btn btn-xs btn-primary" href="http://linguistics.utoronto.ca/nwav44/workshops.html#dipaolo">link</a>
       </p>
-  
+
    <!-- PAPER -->
   <p><strong>Is the Future Almost
   Here? Large-Scale Completely Automated Vowel Extraction of Free
@@ -399,10 +406,41 @@ Large-scale digitization of manuscripts is facilitated by
     modeling functions to sharpen the character recognition output.
   </div>
 
-  <h3>Theses</h3>
+  <h3 id="data">Tools and Data</h3>
+<p><strong>Transcriptions for the
+  <a href="http://www.cslu.ogi.edu/corpora/fae/">CSLU Foreign-Accented English Corpus</a>.</strong>
+  Emily Ahn and Sravana Reddy. 2016.
+</p>
+<p><a class="btn btn-xs btn-primary" data-toggle="collapse"
+data-target="#abscslu" aria-expanded="false"
+role="button">overview</a>
+<a class="btn btn-xs btn-danger" href="https://github.com/wellesleynlp/cslutrans">data</a>
+</p>
+<div id="abscslu" class="bg-info collapse abstract">
+The CSLU Foreign-Accented Speech Corpus is a great source of speech data
+from non-native English speakers.
+We crowdsourced transcriptions for 7 of the 23 native languages on Mechanical Turk,
+and are making them available here.
+</div>
+
+<p><strong>DARLA (Dartmouth Linguistic Automation)</strong>
+  Sravana Reddy and James Stanford. 2015-2016.
+</p>
+<p><a class="btn btn-xs btn-primary" data-toggle="collapse"
+data-target="#absdarlatool" aria-expanded="false"
+role="button">overview</a>
+<a class="btn btn-xs btn-danger" href="http://darla.dartmouth.edu">website</a>
+</p>
+
+<div id="absdarlatool" class="bg-info collapse abstract">
+DARLA is a suite of automated analysis programs tailored to
+research questions in sociophonetics.
+</div>
+
+  <h3 id="theses">Theses</h3>
   <!--     PAPER --->
     	<p><strong>Learning Pronunciations from Unlabeled Evidence.</strong>
-2012. Doctoral Dissertation, 
+2012. Doctoral Dissertation,
 	<em>The University of Chicago</em>.</p>
  <p>
   	<a class="btn btn-xs btn-primary"
@@ -410,26 +448,26 @@ Large-scale digitization of manuscripts is facilitated by
       </p>
 
     <!--     PAPER --->
-    	<p><strong>Part of Speech Induction Using Non-negative Matrix  
+    	<p><strong>Part of Speech Induction Using Non-negative Matrix
 Factorization.</strong>
-2009. Masters' Thesis, 
+2009. Masters' Thesis,
 	<em>The University of Chicago</em>.</p>
  <p>
   	<a class="btn btn-xs btn-primary" data-toggle="collapse"
 	data-target="#absms" aria-expanded="false"
   role="button">abstract</a>
   </p>
-  
+
   <div id="absms" class="bg-info collapse abstract">
-  Unsupervised part-of-speech induction involves the discovery of  
-syntactic categories in a text, given no additional information other  
-than the text itself.  One requirement of an induction system is the  
-ability to handle multiple categories for each word, in order to deal  
-with word sense ambiguity.  We construct an algorithm for unsupervised  
-part-of-speech induction, treating the problem as one of soft  
-clustering.  The key technical component of the algorithm is the  
-application of the recently developed technique of non-negative matrix  
-factorization to the task of category discovery, using word contexts  
+  Unsupervised part-of-speech induction involves the discovery of
+syntactic categories in a text, given no additional information other
+than the text itself.  One requirement of an induction system is the
+ability to handle multiple categories for each word, in order to deal
+with word sense ambiguity.  We construct an algorithm for unsupervised
+part-of-speech induction, treating the problem as one of soft
+clustering.  The key technical component of the algorithm is the
+application of the recently developed technique of non-negative matrix
+factorization to the task of category discovery, using word contexts
 and morphology as syntactic cues.
   </div>
 
@@ -451,7 +489,7 @@ and morphology as syntactic cues.
 	  <li>A two week seminar on Language Variation through
   the Lens of Web Data at the LSA 2015 <a href="https://lsa2015.uchicago.edu">Linguistic Summer Institute</a>.
 
-	  <li>At Dartmouth, three iterations of 
+	  <li>At Dartmouth, three iterations of
 	  Computational Linguistics</a>, cross-listed with Linguistics
     and Computer Science, in <a href="https://piazza.com/dartmouth/winter2013/ling50cosc9/home">Winter 2013</a>, <a href="https://piazza.com/dartmouth/fall2013/ling50cosc73/home">Fall 2013</a>, and Fall 2014.
 
@@ -479,7 +517,7 @@ and morphology as syntactic cues.
 <p>	  I was the local organizer for the North American
     Computational Linguistics Olympiad (<a href="http://www.cs.dartmouth.edu/~naclo">NACLO</a>) at Dartmouth.</p>
 
-<p>I'm one of the co-chairs of the demo session at <a href="http://naacl.org/naacl-hlt-2016/demos.html">NAACL 2016</a>. 
+<p>I'm one of the co-chairs of the demo session at <a href="http://naacl.org/naacl-hlt-2016/demos.html">NAACL 2016</a>.
 Submit your papers and pass the CFP around.</p>
 
 	</div>  <!-- /.teachingtab -->
@@ -503,17 +541,17 @@ where I was supported by a Wien Scholarship. I grew up in <a href="http://en.\
 wikipedia.org/wiki/Bangalore" target="_blank">Bangalore</a>.</p>
 
 	</div> <!--/.misctab -->
-	
+
 </div><!-- /.tab -->
-  
+
   </div><!-- /.container -->
 
 <!-- Start of StatCounter Code -->
 <script type="text/javascript" language="javascript">
-var sc_project=2052709; 
-var sc_invisible=1; 
-var sc_partition=18; 
-var sc_security="c224799b"; 
+var sc_project=2052709;
+var sc_invisible=1;
+var sc_partition=18;
+var sc_security="c224799b";
 </script>
 
 <script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img  src="http://c19.statcounter.com/counter.php?sc_project=2052709&java=0&security=c224799b&invisible=1" alt="free hit counter script" border="0"></a> </noscript>
