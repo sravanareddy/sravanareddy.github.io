@@ -3,6 +3,10 @@ body {
     background-color: #B4CDCD;
 }
 
+.sec {
+  padding-top: 30px;
+}
+
 .main {
   padding: 30px 15px;
   text-align: left;

@@ -34,8 +34,8 @@
       aria-controls="home" role="tab" data-toggle="tab">Research</a></li>
 	    <li role="presentation"><a href="#teaching"
       aria-controls="teaching" role="tab" data-toggle="tab">Teaching/Service</a></li>
-<li role="presentation"><a href="#misc"
-      aria-controls="misc" role="tab" data-toggle="tab">Misc</a></li>          </ul>
+<li role="presentation"><a href="#toolsdata"
+      aria-controls="toolsdata" role="tab" data-toggle="tab">Tools/Data</a></li>          </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
@@ -50,7 +50,8 @@
 	Computer Science, working on speech
 	and natural
 	language processing. I got my PhD from the University of
-	Chicago, and spent some time at Dartmouth College as a Neukom Fellow.</p>
+	Chicago, and spent some time at Dartmouth College as a Neukom Fellow, and
+USC/ISI as an intern.</p>
 
       <div class="tab-content">
 
@@ -62,21 +63,23 @@
 	unsupervised learning,
 	pronunciation modeling, and applications of NLP to linguistics, humanities, and the social sciences.</p>
 
+<!--
   <ol class="breadcrumb">
   <li><a href="#pubs">Publications</a></li>
   <li><a href="#pres">Presentations</a></li>
-  <li><a href="#data">Tools and Data</a></li>
-<li><a href="#theses">Theses</a></li>
+  <li><a href="#theses">Theses</a></li>
   </ol>
+-->
 
-	<h3 id="pubs">Publications</h3>
+  <div id="pubs">
+	<h3>Publications</h3>
 
 	<!--     PAPER --->
 
 	<p><strong>Toward completely automated vowel extraction: Introducing
 	DARLA.</strong>
-	Sravana Reddy and <a
-  href="http://www.dartmouth.edu/~jstanford/">James N. Stanford</a>. <em>Linguistics Vanguard (2015)</em>.</p>
+	Sravana Reddy and
+  <a href="http://www.dartmouth.edu/~jstanford/">James N. Stanford</a>. <em>Linguistics Vanguard (2015)</em>.</p>
 	<p>
 	<a class="btn btn-xs btn-primary"
 	href="papers/vanguard.pdf">preprint</a>
@@ -308,9 +311,13 @@ Motivated by phrase-based translation research, we present a transliteration sys
 An eggcorn is a type of linguistic error where a word is substituted with one that is semantically plausible -- that is, the substitution is a semantic reanalysis of what may be a rare, archaic, or otherwise opaque term. We build a system that, given the original word and its eggcorn form, finds a semantic path between the two. Based on these paths, we derive a typology that reflects the different classes of semantic reinterpretation underlying eggcorns.
   </div>
 
- <!-- PAPER -->
+</div> <!-- /.pubs -->
 
-  <h3 id="pres">Presentations</h3>
+<div id="pres">
+  <h3>Presentations</h3>
+
+<p><strong>Note:</strong> These are papers at linguistics and humanities conferences
+  that are not archival.</p>
 
    <p><strong>Automatic speech recognition in sociophonetics.</strong>
   Sravana Reddy, <a href="http://www.dartmouth.edu/~jstanford">James
@@ -406,39 +413,10 @@ Large-scale digitization of manuscripts is facilitated by
     modeling functions to sharpen the character recognition output.
   </div>
 
-  <h3 id="data">Tools and Data</h3>
-<p><strong>Transcriptions for the
-  CSLU Foreign-Accented English Corpus.</strong>
-  <a href="https://www.linkedin.com/in/emily-ahn-50205472">Emily Ahn</a>
- and Sravana Reddy. 2016.
-</p>
-<p><a class="btn btn-xs btn-primary" data-toggle="collapse"
-data-target="#abscslu" aria-expanded="false"
-role="button">overview</a>
-<a class="btn btn-xs btn-danger" href="https://github.com/wellesleynlp/cslutrans">data</a>
-</p>
-<div id="abscslu" class="bg-info collapse abstract">
-The CSLU Foreign-Accented Speech Corpus is a great source of speech data
-from non-native English speakers.
-We crowdsourced transcriptions for 7 of the 23 native languages on Mechanical Turk,
-and are making them available here.
-</div>
+</div> <!-- /.pres -->
 
-<p><strong>DARLA (Dartmouth Linguistic Automation).</strong>
-  Sravana Reddy and James Stanford. 2015-2016.
-</p>
-<p><a class="btn btn-xs btn-primary" data-toggle="collapse"
-data-target="#absdarlatool" aria-expanded="false"
-role="button">overview</a>
-<a class="btn btn-xs btn-danger" href="http://darla.dartmouth.edu">website</a>
-</p>
-
-<div id="absdarlatool" class="bg-info collapse abstract">
-DARLA is a suite of automated analysis programs tailored to
-research questions in sociophonetics.
-</div>
-
-  <h3 id="theses">Theses</h3>
+<div id="theses">
+  <h3>Theses</h3>
   <!--     PAPER --->
     	<p><strong>Learning Pronunciations from Unlabeled Evidence.</strong>
 2012. Doctoral Dissertation,
@@ -472,6 +450,8 @@ factorization to the task of category discovery, using word contexts
 and morphology as syntactic cues.
   </div>
 
+</div><!-- /.theses -->
+
   </div><!-- /.researchtab -->
 
         <div role="tabpanel" class="tab-pane" id="teaching">
@@ -481,9 +461,13 @@ and morphology as syntactic cues.
 	  <h3>Courses</h3>
 	  <p>I am currently co-teaching <a
 	  href="http://cs.wellesley.edu/~cs111/">Computer Programming
-	  and Problem Solving</a> at Wellesley in Fall 2015.</p>
+	  and Problem Solving</a> at Wellesley in Fall 2016.</p>
 
-<p>I will be teaching <a href="http://wellesleynlp.github.io/spring16/">Natural Language Processing</a> in Spring 2016.</p>
+<p>I taught a previous iteration of this course in Fall 2015,
+  and a new class on <a href="http://wellesleynlp.github.io/spring16/">Natural Language Processing</a> in Spring 2016.</p>
+
+<p>I will be teaching a new course on Machine Learning in Spring 2016.
+</p>
 
 <h4>Previously:</h3>
 <ul>
@@ -500,48 +484,85 @@ and morphology as syntactic cues.
 </ul>
 
 	  <h3>Students</h3>
-<p>	  I've worked with some great students at Dartmouth: James Brofos,
+<p>	  I've worked with some great undergraduate students: James Brofos,
       Irene Feng, Steven Nugent, Crystal Ye, Joy Zhong, Alexander
-      Welton, and Ian
-      Stewart. The last two wrote senior theses
+      Welton, Ian
+      Stewart, and Emily Ahn. The last three wrote senior theses
       on <a
       href="http://www.cs.dartmouth.edu/reports/TR2014-754.pdf"
-      target="blank">Automated Stylistic Analysis</a>
-      and <a
+      target="blank">Automated Stylistic Analysis</a>, <a
       href="https://books.google.com/books/about/Now_We_Stronger_Than_Ever.html\
 ?id=1GOhoAEACAAJ"
       target="blank">
-      African American English Syntax on Twitter</a> -- go check them
+      African American English Syntax on Twitter</a>,
+      and <a href="http://repository.wellesley.edu/thesiscollection/323/">Foreign Accent Classification</a>
+      -- go check them
 	  out!</p>
 
 	  <h3>Admin</h3>
 <p>	  I was the local organizer for the North American
-    Computational Linguistics Olympiad (<a href="http://www.cs.dartmouth.edu/~naclo">NACLO</a>) at Dartmouth.</p>
-
-<p>I'm one of the co-chairs of the demo session at <a href="http://naacl.org/naacl-hlt-2016/demos.html">NAACL 2016</a>.
-Submit your papers and pass the CFP around.</p>
+    Computational Linguistics Olympiad (<a href="http://www.cs.dartmouth.edu/~naclo">NACLO</a>) at Dartmouth,
+and one of the co-chairs of the demo session at <a href="http://naacl.org/naacl-hlt-2016/demos.html">NAACL 2016</a>.
+</p>
 
 	</div>  <!-- /.teachingtab -->
 
-	<div role="tabpanel" class="tab-pane" id="misc">
+  <div role="tabpanel" class="tab-pane" id="toolsdata">
+  <h2 id="toolsdata">Tools and Data</h2>
 
-	  <h2>Miscellany</h2>
+<p>
+This is a collection of various resources I collected/created for research
+that may be useful to others.
+</p>
 
-	  <h3>Experience</h3>
-	  <p>I interned in 2010 and 2011 with the natural language group at the USC
-<a href="http://www.isi.edu" target="_blank">Information Sciences Institute</a>, and 2009 with the speech group at
-<a href="http://www.merl.com">Mitsubishi Electric
-Research Labs</a> (MERL). In the more distant past, I spent the summer of 2006 at the
-<a href="http://www.perseus.tufts.edu">Perseus Digital Library</a> at Tufts, working on Latin OCR, and 2005 at the CMU
-<a href="http://www.ri.cmu.edu"> Robotics
-Institute</a>.</p>
+  <!-- PAPER -->
+<p><strong>Transcriptions for the
+  CSLU Foreign-Accented English Corpus.</strong>
+  <a href="https://www.linkedin.com/in/emily-ahn-50205472">Emily Ahn</a>
+ and Sravana Reddy. 2016.
+</p>
+<p><a class="btn btn-xs btn-primary" data-toggle="collapse"
+data-target="#abscslu" aria-expanded="false"
+role="button">overview</a>
+<a class="btn btn-xs btn-danger" href="https://github.com/wellesleynlp/cslutrans">data</a>
+</p>
+<div id="abscslu" class="bg-info collapse abstract">
+The CSLU Foreign-Accented Speech Corpus is a great source of speech data
+from non-native English speakers.
+We crowdsourced transcriptions for 7 of the 23 native languages on Mechanical Turk,
+and are making them available here.
+</div>
 
-<p>Before graduate school, I went to college at  <a
-href="http://www.brandeis.edu" target="_blank">Brandeis University</a>,
-where I was supported by a Wien Scholarship. I grew up in <a href="http://en.\
-wikipedia.org/wiki/Bangalore" target="_blank">Bangalore</a>.</p>
+<!-- PAPER -->
+<p><strong>DARLA (Dartmouth Linguistic Automation).</strong>
+  Sravana Reddy and
+  <a href="http://www.dartmouth.edu/~jstanford/">James Stanford</a>. 2015-2016.
+</p>
+<p><a class="btn btn-xs btn-primary" data-toggle="collapse"
+data-target="#absdarlatool" aria-expanded="false"
+role="button">overview</a>
+<a class="btn btn-xs btn-danger" href="http://darla.dartmouth.edu">website</a>
+</p>
+<div id="absdarlatool" class="bg-info collapse abstract">
+DARLA is a suite of automated analysis programs tailored to
+research questions in sociophonetics.
+</div>
 
-	</div> <!--/.misctab -->
+<!-- PAPER -->
+<p><strong>Chicago Rhyming Poetry Corpus.</strong>
+  <a href="http://people.linguistics.mcgill.ca/~morgan/">Morgan Sonderegger</a>
+  and Sravana Reddy. 2011.
+</p>
+<p><a class="btn btn-xs btn-primary" data-toggle="collapse"
+data-target="#absrhymedata" aria-expanded="false"
+role="button">overview</a>
+<a class="btn btn-xs btn-danger" href="https://github.com/sravanareddy/rhymedata">data</a>
+</p>
+<div id="absrhymedata" class="bg-info collapse abstract">
+A collection of rhyming poetry in English and French, manually annotated with rhyme schemes.
+</div>
+
+	</div>  <!-- /.toolstab -->
 
 </div><!-- /.tab -->
 
