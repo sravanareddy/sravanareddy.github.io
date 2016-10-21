@@ -17,8 +17,16 @@ body {
     background-color: #003333;
 }
 
+.table-fixed {
+   table-layout: fixed;
+}
+
 .abstract {
     padding: 10px 10px 10px 10px;
+}
+
+.colloqabstract {
+  width: inherit;
 }
 
 .minibox {
