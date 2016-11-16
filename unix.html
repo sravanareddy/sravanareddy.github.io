@@ -259,18 +259,18 @@ $	cat 2*
        <p class="collapse bg-success" id="ex1"><tt>$ ls mc*       </tt>
        </p>
 
-  <li>List only the names of all directories ending with <tt>k</tt>
+  <li>List only the names of all directories ending with <tt>j</tt>
     <a class="btn" data-toggle="collapse" data-target="#ex2">answer &raquo;</a><br>
        <p class="collapse bg-success" id="ex2"><tt>$ ls -d *k</tt>
        </p>
 
     <li>
-Go inside <tt>donohoe-t</tt>'s <tt>deleted_items</tt> directory, preview message
+Go inside <tt>mckay-j</tt>'s <tt>deleted_items</tt> directory, preview message
 37., show the last 5 lines of message 20.
 and go back inside the <tt>enron</tt> folder.
   <a class="btn" data-toggle="collapse" data-target="#ex3">answer &raquo;</a><br>
      <p class="collapse bg-success" id="ex3">
-       <tt>$ cd donohoe-t/deleted_items</tt><br>
+       <tt>$ cd mckay-j/deleted_items</tt><br>
 <tt>$ less 37.</tt><br>
 <tt>$ tail -n5 20.</tt><br>
 <tt>$ cd -</tt>
@@ -286,7 +286,7 @@ and go back inside the <tt>enron</tt> folder.
 <li>Get the number of words in the files of people whose last names are <tt>mckay</tt>
        <a class="btn" data-toggle="collapse" data-target="#ex5">answer &raquo;</a><br>
           <p class="collapse bg-success" id="ex5">
-            <tt>$ wc -w mckay/*/*.</tt>
+            <tt>$ wc -w mckay*/*/*.</tt>
           </p>
 </ul>
 
@@ -390,11 +390,12 @@ $	ln -s source [dest]
        <p class="collapse bg-success" id="ex7">
          <tt>$ rm -r rei*     </tt>
        </p>
-  <li>Move all items in <tt>william-j</tt>'s <tt>legal</tt> directory
+  <li>Move all items that end in <tt>1</tt>
+    in <tt>mckay-j</tt>'s <tt>quotes</tt> directory
     to their <tt>inbox</tt>
     <a class="btn" data-toggle="collapse" data-target="#ex8">answer &raquo;</a><br>
        <p class="collapse bg-success" id="ex8">
-         <tt>$ mv williams-j/legal/* williams-j/inbox   </tt>
+         <tt>$ mv mckay-j/quotes/*1. mckay-j/inbox   </tt>
        </p>
 </ul>
 
@@ -478,6 +479,7 @@ $	grep word filename	</td>
 
 <p>
 Try these out and figure out what they do.
+</p>
 
 <tt>
   <table class="table table-bordered">
@@ -506,21 +508,26 @@ Try these out and figure out what they do.
 
 <p>Besides searching for strings, you can search for
   patterns specified by regular expressions.
+Some commonly used symbols in grep searches:
 </p>
 
-Some commonly used symbols in grep searches:
 
 <tt>
-==>	^			Start of line <br>
-==>	$			End of line<br>
-==>	.			Any single character<br>
-==>	* 			Any number of occurrences (incl 0) of the previous character. “d*” matches any number of “d”s<br>
-==>	\+			At least one occurrence of the previous character<br>
-==>	\?			Zero or one occurrences of the previous character<br>
-==>	\			Escaping special characters (like * or .)<br>
-==>	[0-9]		Any digit<br>
-==>	[a-z]		Any lowercase letter<br>
-==>	[aeiou]		Any lowercase vowel
+  <table class="table table-bordered">
+    <tr>  <td>	^		</td><td>	Start of line </td></tr>
+<tr>  <td>$		</td><td>	End of line</td></tr>
+<tr>  <td>.		</td><td>	Any single character</td></tr>
+<tr>  <td>* 	</td><td>		Any number of occurrences (incl 0) of the previous character. d* matches any number of d</td></tr>
+<tr>  <td>\+	</td><td>		At least one occurrence of the previous character</td></tr>
+<tr>  <td>\?	</td><td>		Zero or one occurrences of the previous character</td></tr>
+<tr>  <td>\	</td><td>		Escaping special characters (like * or .)</td></tr>
+<tr>  <td>	[0-9] or \d	</td><td>	Any digit</td></tr>
+<tr>  <td>[a-z]	</td><td>	Any lowercase letter</td></tr>
+<tr>  <td>[A-Z]	</td><td>	Any uppercase letter</td></tr>
+<tr>  <td>[aeiou]	</td><td>	Any lowercase vowel</td></tr>
+<tr>  <td>\W	</td><td>	Any whitespace (spaces, newlines, etc)</td></tr>
+<tr>  <td>\w	</td><td>	Any non-whitespace</td></tr>
+</table>
 </tt>
 
 <h3>Bash Scripting</h3>
@@ -530,7 +537,7 @@ $ is used to reference variables after they’ve been declared.
 </p>
 
 <p>
-Here's how to go inside each of <tt>fossum-d</tt>'s directories, print its name,
+Here's how to go inside each of <tt>mckay-b</tt>'s directories, print its name,
 search for line containing e-mail addresses in its files,
 and write the results to a file named <tt>search.txt</tt>.
 </p>
@@ -540,7 +547,7 @@ for dirname in */; do cd $dirname; echo $dirname; grep "@.*\." *. >> ../../resul
 </tt>
 
 <p>
-We can also save these bash programs to a file, typically with a .sh extension.
+We can save these bash programs to a file, typically with a <tt>.sh</tt> extension.
 Larger bash programs are better written in a file than on the command line directly.
 </p>
 
@@ -567,7 +574,7 @@ $	scp source dest	</td><td>
 <h3>More reading:</h3>
 
 <ul>
-  <li><a href="http://cs.wellesley.edu/~webdb/unix.html">Scott's tutorial</a>
+  <li><a href="http://cs.wellesley.edu/~webdb/unix.html">Scott's excellent tutorial</a>
 <li><a href="https://twitter.com/climagic">CLI Magic (advanced)</a>
 </ul>
 
